@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/web-icon.jpg">
+    <title>Mihalis Alexakos</title>
+
+
+    <meta property="og:title" content="Mihalis Alexakos">
+    <meta property="og:description" content="Frontend developer crafting websites with HTML, CSS and JavaScript. Explore my work and projects.">
+    <meta property="og:image" content="images/preview.png">
+    <!-- <meta property="og:url" content="https://yourdomain.com"> -->
+    <meta property="og:type" content="website">
+</head>
+<body>
+    
+    <div id="about" class="window-container">
+        <div class="window">
+            <!-- top-bar element -->
+            <div class="sticky-elements">
+                <div class="top-bar">
+                    <h1>MihalisAlexakos.exe</h1>
+                    <div class="top-bar-icons">
+                        <button onclick="playClickSound()" class="top-bar-icon minimize">
+                            <img src="images/minimize.svg">
+                        </button>
+                        <button onclick="playClickSound()" class="top-bar-icon expand">
+                            <img src="images/expand.svg">
+                        </button>
+                        <button onclick="playClickSound()" class="top-bar-icon close">
+                            <img src="images/close.svg">
+                        </button>
+                        <button id="hamburger" onclick="mobileMenu(); playClickSound()" class="top-bar-icon hamburger closed">
+                            <img src="images/hamburger.png">
+                        </button>
+                    </div>
+                </div>
+                <div class="jump-to hidden">
+                    <a href="#about" style="text-decoration: none;">
+                        <button  onclick="playClickSound()"  class="socials-button">
+                            <img src="images/info.png"> About
+                        </button>
+                    </a>         
+                    
+                    <a href="#socials" style="text-decoration: none;">
+                        <button  onclick="playClickSound()"  class="socials-button">
+                            <img src="images/at.png"> Socials
+                        </button>
+                    </a>  
+
+                    <a href="#projects" style="text-decoration: none;">
+                        <button onclick="playClickSound()" class="socials-button">
+                            <img src="images/code.png"> Projects
+                        </button>
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="content">
+                <!-- about me box -->
+                <div class="about-section subwindow">
+                    <div class="introduction">
+                        <img src="images/icon.png">
+                        <h1>About me</h1>
+                        <p>Hi there, I'm Michael. A computer science college student with a passion for web development and design :)</p>
+                    </div>
+                    <div class="education">
+                        <h1>Education</h1>
+                        <span class="college-details">
+                            <p>Athens University of Economics and Business<br><span style="color: var(--green);">Informatics 2020</span></p>
+                            <a onclick="playClickSound()" href="https://www.aueb.gr" target="_blank" style="text-decoration: none;">
+                                <button id="collegeButton">
+                                <img src="images/share.png">
+                                </button>
+                            </a>
+                        </span>
+                        <h2 style="margin-top: 20px;">Proficient in:</h2>
+                        <div class="lang"> <img src="images/greece.png"> <p>Greek</p> </div>
+                        <div class="lang"> <img src="images/uk.png"> <p>English</p> </div>
+
+                        <div class="familiar-with">
+                            <h2 style="margin-top: 20px;">Familiar with:</h2>
+                                <span>
+                                    <img src="images/js.png">
+                                    <p class="tag">JavaScript</p>
+                                </span>
+                                <span>
+                                    <img src="images/css.png">
+                                    <p class="tag">CSS</p>
+                                </span>
+                                <span>
+                                    <img src="images/electron.png">
+                                    <p class="tag">Electron</p>
+                                </span>
+                                <span id="socials">
+                                    <img src="images/react.png">
+                                    <p class="tag">React</p>
+                                </span>
+                                <span>
+                                    <img src="images/HandleBars.jpeg">
+                                    <p class="tag">HandleBars</p>
+                                </span>
+                                <span>
+                                    <img src="images/nodejs.jpg">
+                                    <p class="tag">Node JS</p>
+                                </span>
+                                <span>
+                                    <img src="images/figma.png">
+                                    <p class="tag">Figma</p>
+                                </span>
+                                <span>
+                                    <img src="images/python.png">
+                                    <p class="tag">Python</p>
+                                </span>
+                                <span>
+                                    <img src="images/cpp.png">
+                                    <p class="tag">C++</p>
+                                </span>
+                                <span>
+                                    <img src="images/sql.png">
+                                    <p class="tag">SQL</p>
+                                </span>
+                                <span>
+                                    <img src="images/java.png">
+                                    <p class="tag">Java</p>
+                                </span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- projects box -->
+                <div class="projects subwindow">
+
+                    <div class="project">
+                        <span class="project-header">  
+                            <div class="title">
+                                <img src="images/RoomiePlug.jpg">
+                                <h1>RoomiePlug</h1>
+                            </div>
+                            <p class="title-info"> Personal project </p>
+                        </span>
+                        <p>Communicate more effectively with your roommates. Easily sort out groceries, incoming bills and events</p>
+                        <div class="details"><p>Web App</p> <p>Backend made with Firebase</p> <p>SPA</p> <p>JS</p> <p>CSS</p> <p>HTML</p></div>
+                        <span class="project-buttons">
+                            <a onclick="playClickSound()" target="_blank" href="DEMOS/RoomiePlug-DEMO/roomate-socialmedia/Page.html"  style="text-decoration: none;">
+                                <button class="demo">
+                                Try out demo
+                                </button>
+                            </a>
+                            <a onclick="playClickSound()" target="_blank" href="https://github.com/mihalisalexakos/RoomiePlug"  style="text-decoration: none;">
+                                <button onclick="playClickSound()">
+                                    View on GitHub
+                                </button>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="project">
+                        <span class="project-header">
+                            <div class="title">
+                                <img src="images/ShiftSync.png">
+                                <h1>ShiftSync</h1>
+                            </div>
+                            <p class="title-info"> College assignment </p>
+                        </span>
+                        <p>Manage the shifts of your employees; view upcoming and past shifts in your calendar, as well as details about the shifts. Get real time updates from employees</p>
+                        <div class="details"><p>SQL server</p> <p>Log in capabilities</p> <p>Backend made with JS</p> <p>CSS</p> <p>HTML</p></div>
+                        <span class="project-buttons">
+                            <a onclick="playClickSound()" target="_blank" href="https://github.com/mihalisalexakos/ShiftSync"  style="text-decoration: none;">
+                                <button onclick="playClickSound()">
+                                    View on GitHub
+                                </button>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="project">
+                        <span class="project-header">
+                            <div class="title">
+                                <img src="images/wiki-ads.jpg">
+                                <h1>Wiki Ads</h1>
+                            </div>
+                            <p class="title-info"> College Assignment </p>
+                        </span>
+                        <p>Fetches data from api, automatically generates html content featuring user posted ads</p>
+                        <div class="details"> <p>Utilizes Handlebars for html generation</p> <p>Log in capabilities</p> <p>Backend made with Node JS</p> <p>CSS</p> <p>HTML</p></div>
+                        <span class="project-buttons">
+                            <a onclick="playClickSound()" target="_blank" href="https://github.com/mihalisalexakos/wikiads"  style="text-decoration: none;">
+                                <button onclick="playClickSound()">
+                                    View on GitHub
+                                </button>
+                            </a>
+                        </span>
+                    </div>
+
+
+                    <div class="project">
+                        <span class="project-header">
+                            <div class="title">
+                                <img src="images/Art-showcase.jpg">
+                                <h1>Art Gallery</h1>
+                            </div>
+                            <p class="title-info"> Personal project </p>
+                        </span>
+                        <p>Art portfolio website, featuring my digital paintings ^^</p>
+                        <div class="details"><p>JS</p> <p>CSS</p> <p>HTML</p></div>
+                        <span class="project-buttons">
+                            <a onclick="playClickSound()" target="_blank" href="DEMOS/Art-Gallery/art.html"  style="text-decoration: none;">
+                                <button>
+                                Check it out
+                                </button>
+                            </a>
+                            <a onclick="playClickSound()" target="_blank" href="https://github.com/mihalisalexakos/art-gallery"  style="text-decoration: none;">
+                                <button onclick="playClickSound()">
+                                    View on GitHub
+                                </button>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="project">
+                        <span class="project-header">
+                            <div class="title">
+                                <img src="images/cat-budget.jpg">
+                                <h1>Cat Budgeting</h1>
+                            </div>
+                            <p class="title-info"> Personal project </p>
+                        </span>
+                        <p>Manage your spendings, split them into categories, get motivated by multiple cat backgrounds</p>
+                        <div class="details"><p>JS</p> <p>CSS</p> <p>HTML</p></div>
+                        <span class="project-buttons">
+                            <a onclick="playClickSound()" target="_blank" href="DEMOS/cat-budget-manager/index.html"  style="text-decoration: none;">
+                                <button>
+                                Check it out
+                                </button>
+                            </a>
+                            <a onclick="playClickSound()" target="_blank" href="https://github.com/mihalisalexakos/cat-budgeting-site"  style="text-decoration: none;">
+                                <button onclick="playClickSound()">
+                                    View on GitHub
+                                </button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <!-- socials box -->
+                <div class="socials">
+                    <a id="projects" href="mailto:mihalisalexakos@gmail.com" style="text-decoration: none;">
+                        <button onclick="playClickSound()" class="socials-button">
+                            Email me!
+                        </button>
+                    </a>
+                    <a onclick="playClickSound()" target="_blank" href="MihalisAlexakosCV.pdf"  style="text-decoration: none;">
+                        <button class="socials-button">
+                            View CV
+                        </button>
+                    </a>
+                    <a onclick="playClickSound()" target="_blank" href="https://www.linkedin.com/in/michael-alexakos-30172a236/"  style="text-decoration: none;">
+                        <button class="socials-button">
+                            <img src="images/linkedin.png"> LinkedIn
+                        </button>
+                    </a>
+                    <a onclick="playClickSound()" target="_blank" href="https://github.com/mihalisalexakos"  style="text-decoration: none;">
+                        <button class="socials-button">
+                            <img src="images/github.svg"> GitHub
+                        </button>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="go-up" onclick="playClickSound()" href="#about"  style="text-decoration: none;">
+        <button>
+            <img src="images/go-up.png"> 
+        </button>
+    </a>
+
+    <svg width="0" height="0">
+        <filter id="noiseFilter">
+        <feTurbulence 
+            type="fractalNoise" 
+            baseFrequency="0.65" 
+            numOctaves="3" 
+            stitchTiles="stitch" />
+        </filter>
+    </svg>
+
+    <script src="script.js"></script> 
+</body>
+</html>
